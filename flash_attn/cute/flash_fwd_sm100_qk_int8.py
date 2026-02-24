@@ -1,4 +1,5 @@
-# Experimental copy of `flash_fwd_sm100.py` for Sage-like feature development.
+# Experimental copy of `flash_fwd_sm100.py` reserved for INT8 QK-quantized SM100
+# CuTeDSL development (SageAttention-inspired dataflow).
 #
 # Keep API compatibility with `flash_attn.cute.interface` so the benchmark can
 # monkeypatch `FlashAttentionForwardSm100` with this module's class.

@@ -199,7 +199,7 @@ def main() -> None:
     parser.add_argument("--warmup", type=int, default=2)
     parser.add_argument("--iters", type=int, default=10)
     parser.add_argument("--variants", default="default,custom")
-    parser.add_argument("--custom-module", default="flash_attn.cute.flash_fwd_sm100_sageexp")
+    parser.add_argument("--custom-module", default="flash_attn.cute.flash_fwd_sm100_qk_int8")
     args = parser.parse_args()
 
     if not torch.cuda.is_available():
